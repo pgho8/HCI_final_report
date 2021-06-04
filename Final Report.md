@@ -39,7 +39,7 @@ Main contents
 kinect v2 SDK를 다운받는다. 
 -링크: https://www.microsoft.com/en-us/download/details.aspx?id=44561
 
-![install1]https://github.com/pgho8/HCI_final_report/blob/main/images/install1.png
+![install1](https://github.com/pgho8/HCI_final_report/blob/main/images/install1.png)
 
 
 다운로드 한 SDK 설치
