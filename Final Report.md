@@ -36,27 +36,36 @@ Main contents
 
 2-2) 프로그램 설치 및 프로그램 실행 (키넥트 설치 방법, 프로그램 실행방법에 대해 설명)
 키넥트 설치방법
-kinect v2 SDK를 다운받는다. 
+1. kinect v2 SDK를 다운받는다. 
 -링크: https://www.microsoft.com/en-us/download/details.aspx?id=44561
 
 ![install1](https://github.com/pgho8/HCI_final_report/blob/main/images/install1.png)
 
 
-다운로드 한 SDK 설치
-설치한 SDK browser v2.0(Kinect for Windows) 실행 
+2. 다운로드 한 SDK 설치
+3. 설치한 SDK browser v2.0(Kinect for Windows) 실행 
+
+![install2](https://github.com/pgho8/HCI_final_report/blob/main/images/install2.png)
 
 
-실행된 SDK Browser에서 Kinect Configuration Verifier의 Run을 클릭하여 실행
+4. 실행된 SDK Browser에서 Kinect Configuration Verifier의 Run을 클릭하여 실행
 
-USB Controller의 느낌표 표시 빼고 모드 체크가 되어있다면 Kinect V2 설치 완료
+![install3](https://github.com/pgho8/HCI_final_report/blob/main/images/install3.png)
+
+5. USB Controller의 느낌표 표시 빼고 모드 체크가 되어있다면 Kinect V2 설치 완료
+
+![install4](https://github.com/pgho8/HCI_final_report/blob/main/images/install4.png)
 
 프로그램 실행 방법
 	https://drive.google.com/file/d/1ajzA5AmhQ0iBd5nvTbwY3qFzsLuSGKwe/view?usp=sharing 
 위의 주소를 통해 파일을 다운받고 kinect motion.exe를 실행시켜 프로그램을 실행시키면 프로그램이 시작됩니다.
 
+![install5](https://github.com/pgho8/HCI_final_report/blob/main/images/install5.png)
 	
 
 2-3) System architecture design (구성도 넣고 간단히 3줄 정도 설명)
+
+![sys_arch](https://github.com/pgho8/HCI_final_report/blob/main/images/system_arch.png)
 
 시스템 인풋은 사람의 움직임 데이터입니다. 걷는 움직임, 걷는 속도, 그리고 방향 선택할 때 팔의 움직임을 Kinect V2를 이용하여 인식합니다. 인식한 데이터를 Unity 알고리즘을 이용하여 운동하고 있는 상태에 따라서 동영상 재생속도를 다르게 설정합니다. 예를 들어 걷고 있으면 앞의 영상이 1배 속으로 재생되고, 빠른 속도로 걷게 되면 영상이 더 빠르게 재생됩니다. 걸음을 멈추면 영상은 즉시 재생을 멈추어 마치 운동하다가 멈추는 느낌을 줄 수 있습니다.
 
@@ -64,23 +73,27 @@ USB Controller의 느낌표 표시 빼고 모드 체크가 되어있다면 Kinec
 Virtual Tour Guide 시스템의 최종 형태는 실행 파일을 통해서 제공될 계획으로 , 처음에 시작, 옵션, 나가도록 하는 것과 시작 지점 선택은 마우스를 통해서 가능하며 이 외에는 사람들의 모션을 통해서 사용이 가능한 형태로 구현하였습니다.
 
 
-메인화면
+1) 메인화면
+
+![메인메뉴](https://github.com/pgho8/HCI_final_report/blob/main/images/HCI_%EB%A9%94%EC%9D%B8%EB%A9%94%EB%89%B4.png)
 
 -Start를 통해서 투어를 시작할 수 있습니다.
 -Option을 통해서 자신이 원하는 옵션을 선택할 수 있습니다.
 -Exit을 통해서 프로그램을 끝낼 수 있습니다.
 
-유저의 움직임 인식
+2) 유저의 움직임 인식
+
+![유저움직임인식](https://github.com/pgho8/HCI_final_report/blob/main/images/HCI_%EC%9B%80%EC%A7%81%EC%9E%84%EC%9D%B8%EC%8B%9D.png)
 
  -밑에 나오는 노란색 인체모형을 통해 움직임을 인식하고 있다는 것을 알 수 있습니다. 화면은 무릎이 어느정도 올라갔을 때 걷는 다는 모션으로 인식하고 화면이 움직이도록 하였습니다. 
 
 
 
+3) 시작 지점 선택
 
+![시작지점선택1](https://github.com/pgho8/HCI_final_report/blob/main/images/HCI_%EC%8B%9C%EC%9E%91%EC%A7%80%EC%A0%90%EC%84%A0%ED%83%9D1.png)
 
-
-
-시작 지점 선택
+![시작지점선택2](https://github.com/pgho8/HCI_final_report/blob/main/images/HCI_%EC%8B%9C%EC%9E%91%EC%A7%80%EC%A0%90%EC%84%A0%ED%83%9D2.png)
 
 
 -어느 장소를 투어할지 선택하여 원하는 장소를 정할 수 있습니다.
@@ -90,11 +103,11 @@ Virtual Tour Guide 시스템의 최종 형태는 실행 파일을 통해서 제�
 
 
 
+4) 갈림길 선택
 
+![갈림길선택1](https://github.com/pgho8/HCI_final_report/blob/main/images/HCI_%EA%B0%88%EB%A6%BC%EA%B8%B8%EC%84%A0%ED%83%9D1.png)
 
-
-
-갈림길 선택
+![갈림길선택2](https://github.com/pgho8/HCI_final_report/blob/main/images/HCI_%EA%B0%88%EB%A6%BC%EA%B8%B8%EC%84%A0%ED%83%9D2.png)
 
 
 -직진을 원할 경우 걷는 모션을 통해서 선택할 수 있습니다.
@@ -108,10 +121,16 @@ Virtual Tour Guide 시스템의 최종 형태는 실행 파일을 통해서 제�
 
 
 
-설명 옵션 선택
+5)설명 옵션 선택
+
+![메인화면](https://github.com/pgho8/HCI_final_report/blob/main/images/HCI_%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4.png)
 
 옵션 선택 기능에서는 투어 중 지원하는 기능인 Tour Guide, Minimap, Calorie Indicator을 끄고 킬 수 있습니다.
-끝내기 기능 
+
+
+6) 끝내기 기능 
+
+![끝내기기능](https://github.com/pgho8/HCI_final_report/blob/main/images/HCI_%EB%81%9D%EB%82%B4%EA%B8%B0.png)
 
 걷다가 T포즈를 취하면 투어 종료를 묻는 메세지가 뜨고 Yes를 선택하면 투어를 종료하고, No를 선택하면 투어를 계속 진행합니다. 
 
